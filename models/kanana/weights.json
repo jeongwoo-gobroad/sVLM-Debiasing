@@ -1,0 +1,16 @@
+{
+  "revision": "2e00ef13ccec2e99459a8eada18a1bfd05bff44b",
+  "repository": "kakaocorp/kanana-1.5-v-3b-instruct",
+  "weights": {
+    "model-00001-of-00002.safetensors": {
+      "sha256": "94272a33a98c25bdd9d646f82c13d1cfeae654e7dd9780cef9ff259799621577",
+      "bytes": 4990094968,
+      "matches_git_lfs": true
+    },
+    "model-00002-of-00002.safetensors": {
+      "sha256": "90eac19b6578027e8271c0712f7c14a9b2ee0705633a022aa22d31b7b02746cb",
+      "bytes": 2345793064,
+      "matches_git_lfs": true
+    }
+  }
+}
