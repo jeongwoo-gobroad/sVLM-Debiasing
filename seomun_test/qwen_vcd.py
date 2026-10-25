@@ -1,5 +1,8 @@
 # (c) 2026 Jeongwoo Kim from KNU CSE, All rights reserved
 # sVLM Inference-time Debiasing Research
+# VCD portions adapted from DAMO-NLP-SG/VCD, revision d6568ff81b8fd306a49e630df44f2db5c2300191.
+# Upstream portions retain Apache-2.0; see ../third_party/VCD/LICENSE.
+# Modified by Jeongwoo Kim for Qwen input handling, Trie integration, and audit outputs.
 from pathlib import Path
 import os
 import sys

@@ -4,6 +4,14 @@
 
 최종 제출 논문의 생성·평가와 Table 6 분석을 재현할 수 있습니다. 저장소에는 코드, requirements, 모델 실행 설정만 포함합니다. 이미지·정답·실험 출력·논문 파일은 별도 보관하며, 실행에는 아래 형식의 데이터가 필요합니다.
 
+## 이용 허가
+
+2026-10-26부터 이 정책을 포함하는 배포본의 직접 작성 코드에는 [사전 허가 및 저자 표시 라이선스](LICENSE)를 적용합니다. **열람·검토용 다운로드·원본 그대로의 GitHub 포크는 자유**이며, 실행·실험 재현·원본 재사용·수정·다른 프로젝트에 포함·재배포는 사전 허가를 받아야 합니다. 연구·교육·비상업적 이용도 포함합니다. 공개 소스이지만 오픈소스 라이선스는 아닙니다.
+
+허가 요청: **jeongwoo.gobroad@gmail.com**. 사용할 버전, 용도, 수정 및 배포 계획을 알려 주십시오. 이메일·메시지 또는 대면·비대면의 명시적 구두 허가가 가능하며, 허가 범위는 기록으로 남기기를 권합니다. 원본 그대로 사용하거나 수정하여 사용하는 경우 모두 이용 프로젝트의 **Contributions(기여)** 항목에 아래 원저자 표시와 저장소 링크를 남겨야 합니다. 포크는 기존 표시를 유지합니다. 허가와 저자 표시는 별개의 조건입니다.
+
+**기존 권리 예외:** `2717bdb` 및 이전 배포에서 유효하게 부여된 GPL-3.0 권리는 이후 이용자에게도 유지됩니다. 새 정책으로 이미 GPL로 공개된 코드를 소급 제한하지 않습니다. 외부 코드·모델에는 [각 원저작권자의 조건](THIRD_PARTY_NOTICES.md)이 적용됩니다.
+
 ## 설치
 
 실험 환경은 **Python 3.12 / Windows / NVIDIA CUDA GPU**입니다. requirements는 실험에 사용한 CUDA 13.0 PyTorch와 패키지 버전을 고정합니다. Kanana와 KELIP은 Transformers 버전이 달라 환경을 분리합니다. Linux에서는 `Scripts/python.exe` 대신 `bin/python`을 사용하며, 별도 실행 검증은 하지 않았습니다.
@@ -30,6 +38,8 @@ $env:HUGGINGFACE_HUB_CACHE = "$env:HF_HOME/hub"
 첫 실행에 [고정 모델 리비전](models/revisions.json)의 가중치를 받습니다. 캐시를 준비한 뒤에는 `$env:HF_HUB_OFFLINE = "1"`로 오프라인 실행할 수 있습니다. GPU 없이 예측 점수만 계산하려면 [evaluation.txt](requirements/evaluation.txt)로도 충분합니다.
 
 ### Kanana 실행
+
+**Powered by Kanana** — [Kanana License Agreement](models/kanana/LICENSE)와 [필수 고지](models/kanana/Notice)를 확인하십시오. 제2.2조의 법규·[책임 있는 AI 지침](https://www.kakaocorp.com/page/responsible/detail/guidelinesForResponsibleAI) 준수 및 후속 이용자 고지 의무가 적용됩니다. 제4조의 일부 상업적 사용에는 Kakao의 별도 허가가 필요하며, 프로젝트 저자의 허가로 대체되지 않습니다.
 
 Transformers **4.45.0**과 포함된 `models/kanana/` 코드·설정·토크나이저를 함께 사용합니다.
 
@@ -195,4 +205,16 @@ pwsh -NoProfile -File studies/run_attention_study.ps1 -PythonQwen .venv-qwen35/S
 
 테스트는 디코딩·VCD 제약, 응답 말미 처리, PPL 토큰 정렬, 대응 순열검정과 상태 저장을 검사합니다. 전체 모델 추론 재실행을 대신하지는 않습니다.
 
-프로젝트는 기존 [GPL-3.0](LICENSE)을 유지합니다. 포함된 [Kanana](models/kanana/LICENSE), [KELIP](third_party/KELIP/LICENSE), [VCD](third_party/VCD/LICENSE)의 코드·모델에는 각 원저작권 및 별도 라이선스가 적용됩니다. 모델 가중치와 실행 결과는 커밋하지 않습니다.
+직접 작성한 코드의 이용 조건은 [LICENSE](LICENSE), 외부 코드·모델의 적용 범위와 고지는 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 있습니다. 이전 [GPL-3.0](licenses/GPL-3.0-previous.txt) 배포 이력은 보존합니다. 모델 가중치와 실행 결과는 커밋하지 않습니다.
+
+## Contributions
+
+**Jeongwoo Kim** — original author of the sVLM-Debiasing project code, excluding the upstream implementations credited in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+허가받아 원본 또는 수정 코드를 이용하는 프로젝트에는 다음과 같이 표시합니다.
+
+> Jeongwoo Kim — original author of the sVLM-Debiasing project code reused here.
+>
+> Source: https://github.com/jeongwoo-gobroad/sVLM-Debiasing
+
+이는 재사용 코드의 출처 표시이며, 후속 프로젝트에 실제로 참여했다거나 논문 공동저자라는 뜻이 아닙니다. GitHub 커밋 작성자나 자동 Contributors 목록을 조작할 필요도 없습니다. 수정본에는 수정 주체와 변경 사실을 구분하여 표시합니다.

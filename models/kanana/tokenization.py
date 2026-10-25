@@ -1,5 +1,8 @@
 # (c) 2026 Jeongwoo Kim from KNU CSE, All rights reserved
 # sVLM Inference-time Debiasing Research
+# Upstream implementation: Copyright KAKAO Corp.; see LICENSE and Notice here.
+# Modified by Jeongwoo Kim: project/provenance comments only; implementation unchanged.
+# The project header above does not claim ownership of the upstream implementation.
 from collections import defaultdict
 import logging
 import re

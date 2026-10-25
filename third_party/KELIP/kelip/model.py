@@ -1,5 +1,7 @@
 # (c) 2026 Jeongwoo Kim from KNU CSE, All rights reserved
 # sVLM Inference-time Debiasing Research
+# Upstream: OpenAI CLIP, Copyright (c) 2021 OpenAI; see ../LICENSE-CLIP (MIT).
+# Modified by Jeongwoo Kim for project headers; upstream implementation is not ours.
 """
 This code is from https://github.com/openai/CLIP/blob/main/clip/model.py
 """

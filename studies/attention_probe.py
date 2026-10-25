@@ -1,5 +1,10 @@
 # (c) 2026 Jeongwoo Kim from KNU CSE, All rights reserved
 # sVLM Inference-time Debiasing Research
+# Attention calculations adapt Transformers Qwen3.5 (v5.3.0) and Llama (v4.45.0).
+# Copyright 2025 The Qwen Team and The HuggingFace Inc. team. All rights reserved.
+# Copyright 2022 EleutherAI and the HuggingFace Inc. team. All rights reserved.
+# Upstream portions retain Apache-2.0; see ../third_party/transformers/LICENSE.
+# Modified by Jeongwoo Kim for last-query capture, region mapping, and validation.
 """Observe the last prompt query without replacing the model's attention backend."""
 import importlib
 import inspect
