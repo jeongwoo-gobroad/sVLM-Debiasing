@@ -1,5 +1,5 @@
-sVLM-Debiasing Prior Permission and Attribution License
-Version 1.0 - 26 October 2026
+sVLM-Debiasing Reproduction and Permission-Based Reuse License
+Version 1.1 - 26 October 2026
 
 Copyright (c) 2026 Jeongwoo Kim. All rights reserved except as granted below.
 
@@ -23,25 +23,41 @@ rights for code already released under GPL-3.0. This license does not add
 restrictions to rights exercised under an applicable prior or third-party
 license, or to uses permitted by applicable law without permission.
 
-2. Free viewing and forking
+2. Free viewing, forking, execution, and reproduction
 
-You may freely view and read the Covered Material, download a copy for
-inspection, and create a verbatim GitHub fork without requesting permission.
+Anyone may view, download, install, and run the Covered Material as a
+standalone program, reproduce its experiments, and verify or evaluate its
+results without requesting separate permission from the Author or paying a
+license fee. You may use your own inputs and adjust parameters, file paths,
+or code as needed to make the program run in your environment for these
+purposes. You may publish reproduction, evaluation, or verification results
+without requesting permission; retain the attribution required by Section 4.
+
+You may create and share a verbatim GitHub fork without requesting permission.
 Preserve this license, the Contributions credit in README.md, and all existing
-copyright, attribution, and third-party notices in such copies and forks.
-These permissions also preserve the viewing and forking rights under GitHub's
-Terms of Service. No execution or other reuse permission follows merely from
-public availability, downloading, or forking.
+copyright, attribution, and third-party notices in copies and forks. GitHub's
+Terms of Service viewing and forking rights are also preserved. Incorporation
+into a separate work or project, and distribution beyond the verbatim-fork
+permission, are governed by Section 3. Upstream conditions in Section 5 apply
+independently to the models and other third-party materials.
 
-3. Prior permission for other uses
+3. Prior permission for reuse in another work or project
 
-Except for Section 2 and the existing rights described in Section 1, you must
-obtain the Author's express permission before using or executing the Covered
-Material, reproducing experiments with it, modifying it, incorporating it into
-another work, or distributing original or modified versions. This applies to
-both commercial and noncommercial use, including academic research, education,
-internal use, and use of unchanged code. Permission is limited to the purpose,
-recipients, duration, and other scope expressly agreed with the Author.
+Except for Section 2 and the existing rights described in Section 1, obtain
+the Author's express permission before incorporating, adapting, or otherwise
+reusing the Covered Material in a separate creative work, research project,
+software project, product, or service. This applies whether the reused code
+is unchanged or modified, and whether the project is personal, academic,
+commercial, noncommercial, public, or private. Redistributing original or
+modified Covered Material beyond Section 2 also requires permission.
+
+Running the standalone program or publishing its reproduction/evaluation
+results does not by itself require this permission. Copying or integrating
+its code into another project, developing a separate derivative project, or
+providing it as part of a product or service does. This license does not claim
+ownership of your data or outputs merely because you ran the program, or
+restrict independent implementations of ideas not protected by copyright.
+Permission is limited to the scope expressly agreed with the Author.
 
 Request permission at: jeongwoo.gobroad@gmail.com
 Identify the revision, intended use, planned changes, and redistribution plans.
@@ -52,7 +68,12 @@ acknowledgment of receipt is not permission. Attribution alone is not permission
 
 4. Attribution for unchanged and modified reuse
 
-For every reuse authorized under this license, whether unchanged or modified,
+For the standalone execution and reproduction allowed by Section 2, preserve
+the existing project notices. Published reproduction or evaluation results
+must credit Jeongwoo Kim and link to the source repository in the report,
+paper, or accompanying documentation; no separate permission is required.
+
+For reuse in another work or project under Section 3, unchanged or modified,
 retain the existing notices and include Jeongwoo Kim in a clearly visible
 section titled "Contributions" (or its local-language equivalent, such as
 "기여") in the using project's README or equivalent documentation. Identify
@@ -98,6 +119,7 @@ FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THE AUTHOR SHALL NOT BE LIABLE
 FOR CLAIMS, DAMAGES, OR OTHER LIABILITY ARISING FROM THE COVERED MATERIAL OR
 ITS USE. THIS DOES NOT EXCLUDE LIABILITY THAT CANNOT LAWFULLY BE EXCLUDED.
 
-This is a source-available, permission-required license, not an open-source
+This is a source-available license with free execution and reproduction and
+permission-required reuse in other works or projects, not an open-source
 license. The permissions expressly stated above are the only permissions
 granted under this license unless the Author expressly agrees otherwise.

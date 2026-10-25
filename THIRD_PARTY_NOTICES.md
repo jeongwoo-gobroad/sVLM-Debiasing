@@ -2,6 +2,8 @@
 
 The root [LICENSE](LICENSE) covers only material whose rights Jeongwoo Kim controls. It does not replace the licenses below. In particular, `models/kanana/`, `third_party/`, and upstream portions of mixed-source files retain their upstream terms. A project header does not claim ownership of upstream implementations. Model weights and datasets are not distributed in this repository.
 
+The root license permits standalone execution and experiment reproduction without separate permission. Reuse of covered code in another work or project requires permission. Neither provision overrides the upstream terms below.
+
 | Component | Included or referenced material | Applicable terms |
 |---|---|---|
 | Qwen3.5 2B/4B; Qwen3-VL 2B/4B | Model identifiers/revisions; implementations loaded through Transformers | Apache-2.0 at the pinned revisions; upstream notices and conditions remain applicable when redistributing model materials. |
